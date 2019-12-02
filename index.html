@@ -1,56 +1,74 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh"; content="5; #bottom" >
+
     <title>Барбершоп бородинский</title>
-    </head>
-    <body>
-        <header class="main-header">
-            <nav class="main-navigation">
-                <a class="main-header-logo">
-                    <img src="img/index-logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
-                </a>
-                <ul class="site-navigation">
-                    <li><a href="info.html">Информация</a></li>
-                    <li><a href="news.html">Новости</a></li>
-                    <li><a href="price.html">Прайс-лист</a></li>
-                    <li><a href="catalog.html">Магазин</a></li>
-                    <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-                <ul class="user-navigation">
-                    <li class="login-link">Вход</li>
-                </ul>
-            </nav>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/main-prefs-min.css" rel="stylesheet" type="text/css">
 
-        </header>
-        <main class="container">
-            <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+</head>
 
-            <section class="features">
-                <h2 class="visually-hidden">Преимущества</h2>
-                <ul class="features-list">
-                    <li class="feature-item">
-                        <h3>Быстро</h3>
-                        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый лошок со смешной стрижкой</p>
-                    </li>
-                    <li class="feature-item">
-                        <h3>Круто</h3>
-                        <p>Мы делаем свою работу круто! Будешгь как петрушка — счастливый придурок со смешной стрижкой</p>
-                    </li>
-                    <li class="feature-item">
-                        <h3>Дорого</h3>
-                        <p>Мы делаем свою работу дорого! Ты узнаешь как платить за то что не должен. Тебя разведём как лоха...</p>
-                    </li>
-                </ul>
-            </section>
-            
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа Бородинский">
+            </a>
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <ul class="site-navigation">
+                        <li><a href="info.html">Информация</a></li>
+                        <li><a href="news.html">Новости</a></li>
+                        <li><a href="barbershop-item.html">Прайс-лист</a></li>
+                        <li><a href="barbershop-shop.html">Магазин</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li><a class="login-link" href="#">Вход</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+
+        <section class="features">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <ul class="features-list">
+                <li class="feature-item">
+                    <h3>Быстро</h3>
+                    <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый мэн со смешной
+                        стрижкой</p>
+                </li>
+                <li class="feature-item">
+                    <h3>Круто</h3>
+                    <p>Мы делаем свою работу круто! Будешгь как петрушка — счастливый чувачок со смешной стрижкой</p>
+                </li>
+                <li class="feature-item">
+                    <h3>Дорого</h3>
+                    <p>Мы делаем свою работу дорого! Ты узнаешь как платить за то что не должен. Тебя разведём как
+                        "зрителя первого канала"...</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="index-columns">
             <section class="news">
                 <h2>Новости</h2>
                 <ul class="news-list">
                     <li class="news-item">
-                        <p>В обычный тренировочный день, 24 апреля. Превосходный телепат верстает этот сайтик...</p>
-                        <time datetime "2018-04-24">24 апреля</time>
+                        <p>В обычный тренировочный день, 24 апреля. Самый лучший программист верстает этот сайтик...</p>
+                        <time datetime="2018-04-24">24 апреля</time>
+                    </li>
+                    <li class="news-item">
+                        <p>В обычный тренировочный день, 17 ноября. Самый лучший программист вносит правки в этот
+                            сайтик, чтоб выложить в портфолио...</p>
+                        <time datetime="2019-11-17">17 ноября</time>
                     </li>
                 </ul>
                 <a class="button" href="news.html">Все новости</a>
@@ -59,12 +77,14 @@
             <section class="gallery">
                 <h2>Фотогалерея</h2>
                 <figure class="gallery-content">
-                    <a href="#"><img src="img/studio.jpeg" alt="Интерьер"></a>
+                    <a href="#"><img src="img/news-img.png" alt="Интерьер"></a>
                 </figure>
-                <span class="button gallery-button gallery-button-back">Назад</span>
-                <span class="button gallery-button gallery-button-next">Вперёд</span>
+                <button class="button gallery-button gallery-button-back" disabled>Назад</button>
+                <button class="button gallery-button gallery-button-next">Вперёд</button>
             </section>
+        </div>
 
+        <div class="index-columns">
             <section class="contacts">
                 <h2>Контактная информация</h2>
                 <p>
@@ -76,52 +96,150 @@
                     Время работы: <br>
                     пн-пт: с 10:00 до 22:00 <br>
                     сб-вс: с 10:00 до 19:00
-                </p> 
-                <a class="button" href="map.html">Как проехать</a>   
-                <a class="button" href="contacts.html">Обратная связь</a>  
+                </p>
+                <a class="button" href="map.html">Как проехать</a>
+                <a class="button" href="contacts.html">Обратная связь</a>
             </section>
 
             <section class="appointment">
                 <h2>Записаться</h2>
-                <p class="appointment-info">Укажите желаемую дату и время и мы с вами свяжемся для подтверждения брони</p>
-                <!--Здесь будет форма-->
+                <p class="appointment-info">Укажите желаемую дату и время и мы с вами свяжемся для подтверждения брони
+                </p>
+                <form class="appointment-form" action="action.php">
+                    <p class="appointment-item">
+                        <label for="appointment-date">Дата</label>
+                        <input id="appointment-date" type="text" name="date" value="00:00">
+                    </p>
+
+                    <p class="appointment-item">
+                        <label for="appointment-time">Время</label>
+                        <input id="appointment-time" type="text" name="time" value="00:00">
+                    </p>
+
+                    <p class="appointment-item">
+                        <label for="appointment-name">Ваше имя</label>
+                        <input id="appointment-name" type="text" name="name" value="18-05-2019">
+                    </p>
+
+                    <p class="appointment-item">
+                        <label for="appointment-phone">Телефон</label>
+                        <input id="appointment-phone" type="tel" name="phone" value="123 456-78-90">
+                    </p>
+
+                    <button class="button appointment-info-button" type="submit">Отправить</button>
+                </form>
             </section>
+        </div>
+    </main>
 
-        </main>
+    <footer class="main-footer">
+        <section class="map">
+            <h2 class="visually-hidden">Как до нас добраться</h2>
+            <div>
+                <a href="#" class="map-link">
+                    <img src="/img/map.png" alt="Адрес нгаш">
+                </a>
+            </div>
+        </section>
 
-        <footer class="main-footer">
-            <p>
-                Барбершоп "Бородинский"<br>
-                Адрес: г. Первоуральскб Б. Прокатчиков, д.222/2<br>
-                <a href="map.html">Как нас найти?</a><br>
-                Телефон: Нокиа.
-            </p>
-            <div class="footer-social">
+        <div class="container">
+            <section class="footer-contacts">
+                <p>
+                    Барбершоп "Бородинский"<br>
+                    Адрес: г. Первоуральскб Б. Прокатчиков, д.222/2<br>
+                    <a href="map.html">Как нас найти?</a><br>
+                    Телефон: Нокиа.
+                </p>
+            </section>
+            <section class="footer-social">
                 <b>Давайте дружить</b>
                 <ul>
-                    <li><a class="social-button" href="#">Вконтакте</a></li>
-                    <li><a class="social-button" href="#">Фейсбук</a></li>
-                    <li><a class="social-button" href="#">Инстаграм</a></li>
+                    <li>
+                        <a class="social-button" href="#">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26px" height="15px"
+                                viewBox="0 0 26 15" enable-background="new 0 0 26 15" xml:space="preserve">
+                                <path fill="#FFFFFF" d="M16.138,11.51c0.956-0.309,2.18,2.04,3.483,2.939c0.978,0.681,1.727,0.534,1.727,0.534l3.473-0.05
+	c0,0,1.815-0.112,0.957-1.554c-0.071-0.12-0.503-1.069-2.585-3.022c-2.177-2.043-1.882-1.712,0.739-5.244
+	c1.597-2.153,2.236-3.468,2.036-4.028c-0.192-0.539-1.365-0.399-1.365-0.399L20.69,0.713c-0.381,0.001-0.704,0.119-0.851,0.515
+	c-0.003,0.004-0.621,1.666-1.445,3.079c-1.741,2.989-2.436,3.148-2.724,2.961c-0.661-0.433-0.494-1.737-0.494-2.664
+	c0-2.897,0.432-4.105-0.846-4.417c-0.427-0.104-0.739-0.172-1.828-0.182c-1.392-0.021-2.574,0-3.244,0.329
+	c-0.445,0.223-0.786,0.712-0.579,0.74c0.26,0.035,0.843,0.16,1.155,0.586c0.401,0.552,0.389,1.789,0.389,1.789
+	s0.229,3.411-0.54,3.834c-0.528,0.29-1.25-0.302-2.803-3.016C6.087,2.879,5.488,1.345,5.488,1.345S5.372,1.06,5.162,0.904
+	C4.912,0.719,4.562,0.66,4.562,0.66L0.848,0.684c0,0-0.558,0.016-0.763,0.262C-0.097,1.164,0.07,1.614,0.07,1.614
+	s2.909,6.881,6.203,10.347c3.02,3.182,6.452,2.971,6.452,2.971h1.555c0,0,0.469-0.054,0.709-0.312
+	c0.224-0.24,0.214-0.691,0.214-0.691S15.172,11.82,16.138,11.51z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">
+                            <span class="visually-hidden">Фейсбук</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
+                                <path
+                                    d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
+                                    fill="#fff" /></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">
+                            <span class="visually-hidden">Инстаграм</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                                <path
+                                    d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z"
+                                    fill="#fff" /></svg>
+                        </a>
+                    </li>
                 </ul>
-            </div>
+            </section>
             <p class="footer-copyright">
                 <b>Разработано:</b>
                 <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
             </p>
-        </footer>
+        </div>
+    </footer>
 
-        <section class="modal modal-login">
-            <h2>Личный кабинет</h2>
-            <p>Введите свой логин и пароль</p>
-            <!-- Здесь будет форма -->
-            <span class="modal-close">x</span>
-        </section>
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p class="modal-description">Введите свой логин и пароль</p>
 
-        <section class="modal modal-map">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-             <span class="modal-close">x</span>
-        </section>
+        <form class="form login-form" method="POST" action="action.php">
+            <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+            </p>
 
-<p><a name="bottom"></a></p>
-    </body>
+            <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password"
+                    placeholder="Пароль">
+            </p>
+
+            <p class="login-help">
+                <label class="login-checkbox">
+                    <input class="visually-hidden" type="checkbox" name="remember">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+            </p>
+
+            <button class="button login-form-button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2082.9211302245226!2d31.26561025171567!3d58.52952368183999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46beea4a618f628b%3A0x13a40908e0a82576!2z0YPQuy4g0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8sINCS0LXQu9C40LrQuNC5INCd0L7QstCz0L7RgNC-0LQsINCd0L7QstCz0L7RgNC-0LTRgdC60LDRjyDQvtCx0LsuLCAxNzMwMDE!5e0!3m2!1sru!2sru!4v1572786215126!5m2!1sru!2sru"
+            width="780" height="540" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <div class="glass-for-modals"></div>
+    <script src="/js/popap.js"></script>
+</body>
 </html>
