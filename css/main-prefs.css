@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* Animation for LOGIN FORM */
 @-webkit-keyframes bounce {
     0% { -webkit-transform: translateY(-2000px); transform: translateY(-2000px); }
@@ -56,7 +58,7 @@ body {
     text-transform: uppercase;
 
     background-color: #000000;
-    background-image: url("/img/Layer.png");
+    background-image: url("../img/Layer.png");
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -245,7 +247,7 @@ input[type='radio'].visually-hidden{
     width: 16px;
     height: 18px;
 
-    background-image: url(/img/icons/login.svg);
+    background-image: url(../img/icons/login.svg);
     background-repeat: no-repeat;
     background-position: 0 0;
 
@@ -344,8 +346,8 @@ input[type='radio'].visually-hidden{
     margin-bottom: 35px;
 
     background-color: white;
-    background-image: url("/img/background-news-column.png"),
-                        url("/img/background-news.png");
+    background-image: url("../img/background-news-column.png"),
+                        url("../img/background-news.png");
     background-position: center, 0 0;
     background-repeat: no-repeat, repeat;
 }
@@ -382,7 +384,7 @@ input[type='radio'].visually-hidden{
     min-height: 260px;
 
 
-    background-image: url("/img/background-news.png");
+    background-image: url("../img/background-news.png");
     background-repeat: repeat;
     background-color: white;
 }
@@ -479,7 +481,7 @@ input[type='radio'].visually-hidden{
     color: #ffffff;
 
     background-color: #242424;
-    background-image: url("../img/footer-pattern.jpg");
+    background-image: url("..../img/footer-pattern.jpg");
     background-position: 0 0;
     background-repeat: repeat;
 
@@ -619,7 +621,7 @@ input[type='radio'].visually-hidden{
     line-height: 42px;
 
     background-color: #f9f6f3;
-    background-image: url('img/pattern-light.jpg');
+    background-image: url('../img/pattern-light.jpg');
     background-position: 0 0;
     background-repeat: repeat;
     -webkit-box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75);
@@ -715,12 +717,12 @@ input[type='radio'].visually-hidden{
 }
 
 .login-icon-user{
-    background-image: url("/img/icons/user.svg");
+    background-image: url("../img/icons/user.svg");
     background-position: 270px center;
     background-repeat: no-repeat;
 }
 .login-icon-password{
-    background-image: url("/img/icons/lock.svg");
+    background-image: url("../img/icons/lock.svg");
     background-position: 270px center;
     background-repeat: no-repeat;
 }
@@ -879,7 +881,7 @@ content: "";
     width: 12px;
     height: 12px;
 
-    background-image: url("/img/icons/cross.svg");
+    background-image: url("../img/icons/cross.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -1286,7 +1288,7 @@ content: "";
     color: #000000;
 
     background-color: #fdfaf7;
-    background-image: url("img/background-inner-page.png");
+    background-image: url("../img/background-inner-page.png");
     background-position: 0 0;
     background-repeat: repeat;
 
